@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import com.bumptech.glide.Glide;
 
 import java.util.List;
@@ -47,6 +48,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Holder>{
 
     @Override
     public int getItemCount() {
+
         return data.size();
     }
 

@@ -15,6 +15,8 @@ import orgs.androidtown.jsondata.model.User;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
+    List<User> data;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         return result;
     }
 
-    List<User> data;
+
     private void setList(){
         ListAdapter adapter = new ListAdapter(data, this);
         recyclerView.setAdapter(adapter);
